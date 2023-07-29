@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mx-auto">
+    
+
+      <div class="shadow-2xl flex items-center flex-col justify-center min-h-screen w-100">
+        <h1 class="text-3xl text-center mb-4 font-bold underline">
+            Mayer Bank Account!
+          </h1>
+          
+
+  <!-- this section is for deposite widthdraw  -->
+          <section class="container mx-auto p-4">
+            <div class="grid grid-cols-3 gap-4 ">
+                <div class="bg-indigo-600 font-medium p-4 rounded-md">
+                    <h4 class="text-2xl mb-4 text-white">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit_Main_balance">00</span></h2>
+                </div>
+                <div class="bg-sky-600 font-medium p-4 rounded-md">
+                    <h4 class="text-2xl mb-4 text-white">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw_Total">00</span></h2>
+                </div>
+                <div class="bg-yellow-600 font-medium p-4 rounded-md">
+                    <h4 class="text-2xl mb-4 text-white">Balance</h4>
+                    <h2 class="text-5xl">$<span id="main_balance">1200</span></h2>
+                </div>
+            </div>
+          </section>
+          '
+          <!-- this section is for deposite and withdaw form  -->
+          <section class="container mx-auto p-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-600 p-4 rounded-md">
+                    <h4 class="text-2xl font-medium mb-4">Please Deposit</h4>
+                    <input id="depositAmmount" type="text" class="p-3 mb-4 w-10/12   border-2 border-black rounded-lg block" placeholder="write your deposit ammount">
+                    <button id="depositBtn" class="bg-sky-400 text-lg font-medium px-16 py-2 ">Deposit</button>
+
+                </div>
+                <div class="bg-violet-500 p-4 rounded-md">
+                    <h4 class="text-2xl font-medium mb-4">Withdraw</h4>
+                    <input id="withdrawAmmount" type="text" class="p-3 mb-4  w-10/12  border-2 border-black rounded-lg block" placeholder="write your deposit ammount">
+                    <button id="withdrawBtn" class="bg-sky-400 text-lg font-medium px-16 py-2 ">Withdraw</button>
+
+                </div>
+            </div>
+          </section>
+
+          <button onclick="fun()"  class="bg-violet-600 text-lg mt-16 block text-white font-medium px-6 py-2 rounded-md">Logout</button>
+      </div>
+  </div>
+
+  <script src="./../js/index.js"></script>
+  <script src="./../js/utilities.js"></script>
+  <script src="./../js/deposit.js"></script>
+  <script src="./../js/withdraw.js"></script>
+  <!-- <script src="./../js/main.js"></script> -->
+
+  <script>
+    function fun(){
+   
+        window.location.assign("index.html");
+     
+      
+    }
+  </script>
+</body>
+</html>
